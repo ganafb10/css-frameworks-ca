@@ -9,21 +9,22 @@
   <body class="bg-body-bg">
     <nav class="container navbar navbar-dark bg-secondary">
       <div class="container-fluid">
-        <a class="navbar-brand">Navbar</a>
+        <a href="/Authentication-page/index.html" class="navbar-brand"
+          >Navbar</a
+        >
         <form class="d-flex" role="search">
           <input
-            class="form-control me-2"
+            class="form-control me-2 bg-danger"
             type="search"
             placeholder="Search"
             aria-label="Search"
           />
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <button class="btn btn-outline-danger" type="submit">Search</button>
         </form>
       </div>
     </nav>
     <div class="container">
       <h1 class="mt-5 mb-4">Feed Page</h1>
-      <!-- Sort Options -->
       <div class="mb-4">
         <label for="sortOptions" class="form-label">Sort By:</label>
         <select class="form-select" id="sortOptions">
@@ -32,10 +33,7 @@
           <option>Most Popular</option>
         </select>
       </div>
-
-      <!-- Post Thumbnails -->
       <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-        <!-- Sample Post Thumbnails (Replace with dynamic content from backend) -->
         <div class="col">
           <div class="card">
             <img src="../img/p1.jpg" class="card-img-top" alt="..." />
@@ -108,10 +106,7 @@
             </div>
           </div>
         </div>
-        <!-- Repeat the above card structure for each post -->
       </div>
-
-      <!-- Form to Create New Post -->
       <div class="mt-5">
         <h3>Create New Post</h3>
         <form>
@@ -128,28 +123,29 @@
               required
             ></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Post</button>
+          <a href="/profile-page/index.html" class="btn btn-primary">Post</a>
         </form>
       </div>
     </div>
-    <footer class="container bg-dark py-2 mt-5">
+    <footer class="container bg-secondary py-2 mt-5">
       <div class="container">
         <div class="row">
           <div class="col col-md-3">
-            <a class="nav-item nav-link active" href="#">Login</a>
+            <a
+              class="nav-item nav-link active"
+              href="/Authentication-page/index.html"
+              >Login</a
+            >
           </div>
           <div class="col col-md-3">
-            <a class="nav-item nav-link active" href="#">Feed</a>
+            <a class="nav-item nav-link active" href="/feed-page/index.html"
+              >Feed</a
+            >
           </div>
           <div class="col col-md-3">
-            <a class="nav-item nav-link active" href="#">Profile</a>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non
-            placeat tempore, voluptas velit expedita reprehenderit, a quidem
-            repellendus, amet facilis voluptate est fugiat error repudiandae
-            molestiae ipsam qui hic. Ab!
-          </div>
-          <div class="col col-md-3">
-            <a class="nav-item nav-link active" href="#">Contact</a>
+            <a class="nav-item nav-link active" href="/profile-page/index.html"
+              >profile</a
+            >
           </div>
         </div>
       </div>
